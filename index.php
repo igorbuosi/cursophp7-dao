@@ -8,11 +8,25 @@
 	
 	echo json_encode($usuarios);*/
 	
-	$igor = new Usuario();
+	//$igor = new Usuario();
 	
-	$igor->loadById(4);
+	//$igor->loadById(4);
+
+	//echo $igor;
 	
-	echo $igor;
+	
+	//$lista = Usuario::getList();
+	
+	//echo json_encode($lista);
+	
+	//$search = Usuario ::search("us");
+	
+	//echo json_encode($search);
+	
+	$usuario = new Usuario();
+	$usuario->login("user","12345");
+	
+	echo $usuario;
 	
 
 ?>
