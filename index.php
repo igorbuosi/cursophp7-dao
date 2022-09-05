@@ -34,11 +34,18 @@
 	
 	echo $aluno;*/
 	
-	$usuario = new Usuario();
+	/*$usuario = new Usuario();
 	
 	$usuario->loadById(8);
 	
 	$usuario->update("professor","654");
+	
+	echo $usuario;*/
+	
+	$usuario = new Usuario();
+	$usuario->loadById(8);
+	
+	$usuario->delete(8);
 	
 	echo $usuario;
 	
